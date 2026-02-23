@@ -1,1 +1,1 @@
-[![laiyao1's GitHub stats](https://github-readme-stats.vercel.app/api?username=laiyao1)](https://github.com/anuraghazra/github-readme-stats)
+![GitHub Stats](https://github-readme-stats-virid-sigma.vercel.app/api?username=laiyao1)
