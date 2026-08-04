@@ -5,9 +5,9 @@
 <br/>
 
 <a href="https://laiyao1.github.io"><img src="https://img.shields.io/badge/Homepage-2C5364?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-<a href="https://scholar.google.com/"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" /></a>
-<a href="https://www.linkedin.com/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-<a href="mailto:your.email@cst.cam.ac.uk"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://scholar.google.com/citations?user=9Oxeo68AAAAJ"><img src="https://img.shields.io/badge/Google%20Scholar-4285F4?style=for-the-badge&logo=googlescholar&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/laiyao1"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:yl2204@cam.ac.uk"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" /></a>
 <img src="https://img.shields.io/github/followers/laiyao1?style=for-the-badge&color=0F2027&labelColor=161B22&logo=github" />
 
 </div>
