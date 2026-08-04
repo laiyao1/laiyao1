@@ -1,0 +1,87 @@
+name: Profile assets
+
+on:
+  schedule:
+    - cron: "0 3 * * *"      # daily
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      # Main card: header, activity, recent repos
+      - name: Overview
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: github-metrics.svg
+          user: laiyao1
+          template: classic
+          base: header, activity, repositories
+          config_timezone: Europe/London
+          plugin_lines: yes
+
+      # Full-year isometric contribution calendar
+      - name: Calendar
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.isocalendar.svg
+          user: laiyao1
+          base: ""
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year
+
+      # Language breakdown
+      - name: Languages
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.languages.svg
+          user: laiyao1
+          base: ""
+          plugin_languages: yes
+          plugin_languages_details: bytes-size, percentage
+          plugin_languages_limit: 8
+
+      # Achievements
+      - name: Achievements
+        if: ${{ success() || failure() }}
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: metrics.achievements.svg
+          user: laiyao1
+          base: ""
+          plugin_achievements: yes
+          plugin_achievements_threshold: B
+          plugin_achievements_display: compact
+          plugin_achievements_limit: 0
+
+  snake:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: Platane/snk@v3
+        id: snake
+        with:
+          github_user_name: laiyao1
+          outputs: snake.svg?palette=github-dark
+
+      - name: Commit snake.svg
+        run: |
+          cp snake.svg snake.svg.tmp && mv snake.svg.tmp snake.svg
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add snake.svg
+          git diff --staged --quiet || git commit -m "chore: update snake"
+          git push
