@@ -37,24 +37,6 @@ class YaoLai:
 
 ---
 
-## 🧬 Research Map
-
-```mermaid
-flowchart LR
-    A["🧠 Understand<br/>circuit representation<br/>& performance modeling"] --> B["⚡ Generate<br/>layout, topology,<br/>mask, sizing"]
-    B --> C["🌐 Unify<br/>multimodal foundation<br/>model for design"]
-    C -.->|feedback| A
-
-    S["🔁 Physical Simulator<br/>(SPICE / litho / perf)"] -.->|verifiable reward| B
-
-    style A fill:#0F2027,stroke:#58A6FF,color:#fff
-    style B fill:#203A43,stroke:#58A6FF,color:#fff
-    style C fill:#2C5364,stroke:#58A6FF,color:#fff
-    style S fill:#1a1a2e,stroke:#F778BA,color:#fff
-```
-
----
-
 ## 📌 Selected Work
 
 | Project | What it does | Venue |
