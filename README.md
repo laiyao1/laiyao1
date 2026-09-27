@@ -59,8 +59,9 @@ flowchart LR
 
 | Project | What it does | Venue |
 |:--|:--|:--|
-| **MaskPlace** | Fast chip macro placement with pixel-level visual representation | `NeurIPS` |
+| **MaskPlace** | Fast chip macro placement with pixel-level visual representation | `NeurIPS` *Spotlight* |
 | **ChiPFormer** | Transferable placement via offline decision transformer | `ICML` |
+| **ArithTreeRL** | Reinforcement learning for arithmetic tree generation in adders and multipliers | `NeurIPS` *Spotlight* |
 | **AnalogCoder** | Training-free LLM agent that writes analog circuits | `AAAI` *Oral* |
 | **AnalogCoder-Pro** | Unified generation and sizing for analog design | `IEEE TCAD` |
 | **LithoGRPO** | Inverse lithography via GRPO-reinforced flow matching | `ICML` |
@@ -91,27 +92,8 @@ flowchart LR
 
 ---
 
-## 📊 GitHub Activity
-
 <div align="center">
-
-<img src="./github-metrics.svg" alt="Metrics" width="92%" />
-
-<img src="./metrics.isocalendar.svg" alt="Contribution calendar" width="92%" />
-
-<img src="./metrics.languages.svg" alt="Languages" width="46%" />
-<img src="./metrics.achievements.svg" alt="Achievements" width="46%" />
-
-<br/><br/>
 
 <img src="./snake.svg" alt="Contribution snake" width="92%" />
-
-</div>
-
----
-
-<div align="center">
-
-*"Simulate before you fabricate."*
 
 </div>

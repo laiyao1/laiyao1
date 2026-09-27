@@ -14,13 +14,10 @@
     </pattern>
 
     <clipPath id="t1"><rect x="100" y="116" height="32" width="0">
-      <animate attributeName="width" values="0;376;376;0;0" keyTimes="0;0.125;0.2917;0.3333;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="0;376;376;0;0" keyTimes="0;0.1875;0.4375;0.5;1" dur="8s" repeatCount="indefinite"/>
     </rect></clipPath>
     <clipPath id="t2"><rect x="100" y="116" height="32" width="0">
-      <animate attributeName="width" values="0;0;365;365;0;0" keyTimes="0;0.3333;0.4583;0.625;0.6667;1" dur="12s" repeatCount="indefinite"/>
-    </rect></clipPath>
-    <clipPath id="t3"><rect x="100" y="116" height="32" width="0">
-      <animate attributeName="width" values="0;0;342;342;0" keyTimes="0;0.6667;0.7917;0.9583;1" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="width" values="0;0;365;365;0" keyTimes="0;0.5;0.6875;0.9375;1" dur="8s" repeatCount="indefinite"/>
     </rect></clipPath>
 
     <style>
@@ -67,12 +64,11 @@
   <text class="mono" x="70" y="140" fill="#3FB950">$</text>
   <g clip-path="url(#t1)"><text class="mono" x="100" y="140" fill="#58A6FF">Postdoc @ University of Cambridge</text></g>
   <g clip-path="url(#t2)"><text class="mono" x="100" y="140" fill="#58A6FF">Machine Learning for Chip Design</text></g>
-  <g clip-path="url(#t3)"><text class="mono" x="100" y="140" fill="#58A6FF">Simulate before you fabricate.</text></g>
   <rect class="blink" y="122" width="9" height="22" fill="#58A6FF" x="100">
-    <animate attributeName="x" values="100;476;476;100;100;465;465;100;100;442;442;100"
-             keyTimes="0;0.125;0.2917;0.3333;0.3333;0.4583;0.625;0.6667;0.6667;0.7917;0.9583;1"
-             dur="12s" repeatCount="indefinite"/>
+    <animate attributeName="x" values="100;476;476;100;100;465;465;100"
+             keyTimes="0;0.1875;0.4375;0.5;0.5;0.6875;0.9375;1"
+             dur="8s" repeatCount="indefinite"/>
   </rect>
 
-  <text class="small" x="70" y="180" fill="#7D8590">PLACEMENT &#183; ANALOG &#183; LITHOGRAPHY &#183; ACCELERATOR MODELING</text>
+  <text class="small" x="70" y="180" fill="#7D8590">PHYSICAL DESIGN &#183; ANALOG &#183; LITHOGRAPHY</text>
 </svg>
